@@ -1,6 +1,8 @@
 {
   "app": {
-    "tittle": "Plataforma de gestión para centros de actividades al aire libre TrailGo"
+    "title": "Plataforma de gestión para centros de actividades al aire libre TrailGo",
+    "language": "Select language",
+    "languageError": "Could not load the language. Please try again."
   },
   "nav": {
     "home": "Home",

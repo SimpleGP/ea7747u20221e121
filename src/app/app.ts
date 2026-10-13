@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import {Toolbar} from './shared/presentation/components/toolbar/toolbar';
 
 @Component({
-  imports: [RouterOutlet, Toolbar],
+  imports: [ Toolbar],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

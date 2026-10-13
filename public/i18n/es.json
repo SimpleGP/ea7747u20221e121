@@ -1,6 +1,8 @@
 {
   "app": {
-    "tittle": "TrailGo Outdoor Center Management Platform"
+    "title": "TrailGo Outdoor Center Management Platform",
+    "language": "Seleccionar idioma",
+    "languageError": "No se pudo cargar el idioma. Inténtalo nuevamente."
   },
   "nav": {
     "home": "Inicio",

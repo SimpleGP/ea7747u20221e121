@@ -16,7 +16,6 @@ export class LanguageSwitcher {
     group: MatButtonToggleGroup,
   ): Promise<void> {
     await this.store.switchLanguage(language);
-    // Keep the visible selection consistent when loading a language fails.
     group.value = this.store.language();
   }
 }
