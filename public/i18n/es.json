@@ -1,0 +1,9 @@
+{
+  "app": {
+    "tittle": "TrailGo Outdoor Center Management Platform"
+  },
+  "nav": {
+    "home": "Inicio",
+    "reservation": "Nueva Reservacion"
+  }
+}

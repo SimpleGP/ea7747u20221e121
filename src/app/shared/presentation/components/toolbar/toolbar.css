@@ -1,0 +1,78 @@
+.platform-toolbar {
+  padding: 16px 24px;
+  background: #fff;
+  border-bottom: 1px solid #dfe3dc;
+  display: flex;
+  height: auto;
+  min-height: 72px;
+  align-items: center;
+  gap: 24px;
+}
+
+app-language-switcher {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  font-size: 16px;
+  white-space: normal;
+  line-height: 1.4;
+}
+
+.active-link {
+  background: #f7ddd2;
+}
+
+a {
+  color: #a5291b;
+}
+
+a:focus-visible {
+  outline: 3px solid #c73522;
+  outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .platform-toolbar {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .brand {
+    flex: 0 0 100%;
+  }
+
+  nav {
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  app-language-switcher {
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 360px) {
+  nav {
+    flex-basis: 100%;
+  }
+
+  app-language-switcher {
+    margin-left: auto;
+  }
+}

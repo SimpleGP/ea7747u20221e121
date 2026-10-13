@@ -1,8 +1,9 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import {Toolbar} from './shared/presentation/components/toolbar/toolbar';
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Toolbar],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

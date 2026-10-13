@@ -1,0 +1,21 @@
+<mat-button-toggle-group
+  #group="matButtonToggleGroup"
+  [value]="store.language()"
+  [disabled]="store.loading()"
+  (change)="changeLanguage($event.value, group)"
+  [attr.aria-label]="'app.language' | translate"
+>
+  <mat-button-toggle value="en" aria-label="English">
+    EN
+  </mat-button-toggle>
+
+  <mat-button-toggle value="es" aria-label="Español">
+    ES
+  </mat-button-toggle>
+</mat-button-toggle-group>
+
+@if (store.error()) {
+  <p role="alert" class="error">
+    {{ 'app.languageError' | translate }}
+  </p>
+}
